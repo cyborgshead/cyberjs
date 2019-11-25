@@ -57,14 +57,14 @@ class MsgLink extends Msg {
 class Input {
     constructor(address, amount) {
         this.address = address;
-        this.coins = [new Coin(amount, 'cyb')];
+        this.coins = [new Coin(amount, 'eul')];
     };
 };
 
 class Output {
     constructor(address, amount) {
         this.address = address;
-        this.coins = [new Coin(amount, 'cyb')];
+        this.coins = [new Coin(amount, 'eul')];
     };
 };
 
