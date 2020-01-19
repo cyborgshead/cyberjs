@@ -36,7 +36,6 @@ module.exports = {
 
     signTxRequest(signMsg, privateKey) {
         const objectToSign = signMsg.getSignObject();
-        console.log("OBJECTS_TO_SIGN\n", objectToSign);
         const signedBytes = cyberdKeypair.sign(privateKey, objectToSign);
         const keypair = cyberdKeypair.import(privateKey);
         const signs = [buildSignature(codec.hex.hexToBytes(keypair.publicKey), signedBytes, signMsg.accnum, signMsg.sequence)];
