@@ -50,7 +50,7 @@ class MsgLink extends Msg {
     };
 
     type() {
-        return 'cyberd/Link';
+        return 'cyber/Link';
     };
 };
 
